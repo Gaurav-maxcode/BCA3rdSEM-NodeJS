@@ -54,12 +54,25 @@
 
 //----------------------------------------------------------------------------------------------
 
-function greet(name, callback) {
-  console.log("Hello," + name);
-  callback();
-}
-function askquestion() {
-  console.log("How are you?");
-}
+// function greet(name, callback) {
+//   console.log("Hello," + name);
+//   callback();
+// }
+// function askquestion() {
+//   console.log("How are you?");
+// }
 
-greet("user", askquestion);
+// greet("user", askquestion);
+
+//-----------------------------------------------------------------------------------------
+
+//promise in JavaScript
+//A promise is an object that represents thr eventual completion (or Failure)
+//of an asynchronous operation and its resulting values.
+
+//it helps manage asynchronous tasks in a cleaner way than callbacks.
+
+//A promise has 3 states:
+//Pending - initial state, operation not finished.
+//Fulfilled - operation completed sucessfully.
+//Rejected - operation failed.
