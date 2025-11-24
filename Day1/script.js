@@ -76,3 +76,27 @@
 //Pending - initial state, operation not finished.
 //Fulfilled - operation completed sucessfully.
 //Rejected - operation failed.
+
+// Async/Await in JavaScript.
+
+// Async makes your function wait-friendly.
+// it means the function can use await, and it automatically return a promise.
+
+//Await
+
+//await tells javascript:
+//"stop here until this work is finished."
+//(But only work inside an async function.)
+
+function api() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("wether data");
+      resolve(200);
+    }, 2000);
+  });
+}
+
+async function getWetherData() {
+  await AudioParam();
+}
