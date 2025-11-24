@@ -88,15 +88,33 @@
 //"stop here until this work is finished."
 //(But only work inside an async function.)
 
-function api() {
+// function api() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log("wether data");
+//       resolve(200);
+//     }, 2000);
+//   });
+// }
+
+// async function getWetherData() {
+//   await api();
+// }
+
+//-------------------------------------------------
+
+function greetUser() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      console.log("wether data");
+      console.log("Welcome!");
       resolve(200);
     }, 2000);
   });
 }
 
-async function getWetherData() {
-  await AudioParam();
+async function greeting() {
+  console.log("Hello.");
+  await greetUser();
 }
+
+greeting();
